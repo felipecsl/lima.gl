@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>lima.gl</title>
+  <meta name="description" content="A small family domain.">
+  <meta property="og:title" content="lima.gl">
+  <meta property="og:description" content="A small family domain.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lima.gl">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    @font-face {
+      font-family: 'IBM Plex Mono';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('/assets/fonts/IBMPlexMono-Regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'IBM Plex Mono';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url('/assets/fonts/IBMPlexMono-Medium.woff2') format('woff2');
+    }
+
+    :root {
+      --text-primary:   #1a1a1a;
+      --text-secondary: #5a5a5a;
+      --text-tertiary:  #8a8a8a;
+      --bg:             #fafafa;
+      --border:         rgba(0,0,0,0.12);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text-primary:   #e8e8e8;
+        --text-secondary: #a0a0a0;
+        --text-tertiary:  #707070;
+        --bg:             #0e0e0e;
+        --border:         rgba(255,255,255,0.12);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text-primary);
+    }
+
+    body {
+      font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      line-height: 1.7;
+      padding: 4rem 1.5rem 2rem;
+      min-height: 100vh;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 2.5rem 1.25rem 2rem; }
+    }
+
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .crest {
+      color: var(--text-primary);
+      opacity: 0.85;
+      line-height: 0;
+      margin-bottom: 1.75rem;
+    }
+
+    .crest svg {
+      display: inline-block;
+    }
+
+    .wordmark {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 0 0 0.75rem;
+    }
+
+    .tagline {
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 36ch;
+      margin: 0 auto;
+    }
+
+    hr.rule {
+      border: 0;
+      border-top: 0.5px solid var(--border);
+      width: 60px;
+      margin: 2.5rem auto;
+    }
+
+    .marker {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      color: var(--text-secondary);
+      margin: 0 0 14px;
+    }
+
+    .links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .links a {
+      font-size: 13px;
+      color: var(--text-primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 0.5px;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 11px;
+      color: var(--text-tertiary);
+    }
+
+    footer a {
+      color: var(--text-tertiary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="crest">
+      <svg viewBox="0 0 280 420" width="88" xmlns="http://www.w3.org/2000/svg" aria-label="lima.gl crest" role="img">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6286 206.456L152.117 33.4096L139.5 14.1795L9.57767 206.258L140.5 405.791L270.614 214.005L177.901 72.7057L131.307 142.365L144.374 162.281L179.044 111.043L246.662 214.097L140.797 369.786L33.6286 206.456Z" fill="currentColor" stroke="currentColor" stroke-width="15"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M56.864 163.486L69.7852 141.253L140.022 248.298L215.558 138.299L228.176 157.529L138.605 288.063L56.864 163.486Z" fill="currentColor" stroke="currentColor" stroke-width="15" stroke-miterlimit="2.61313"/>
+      </svg>
+    </div>
+
+    <h1 class="wordmark">lima.gl</h1>
+    <p class="tagline">a small family domain. lima from felipe, gl from gall.</p>
+
+    <hr class="rule">
+
+    <p class="marker">[ HERE ]</p>
+    <ul class="links">
+      <li><a href="https://felipe.lima.gl">felipe.lima.gl</a></li>
+    </ul>
+
+    <footer>
+      crest designed 2023 · <a href="https://felipe.lima.gl/2023/05/13/moving-to-lima-gl.html">the story</a>
+    </footer>
+  </main>
+</body>
+</html>
